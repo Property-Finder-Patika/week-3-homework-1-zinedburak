@@ -8,6 +8,8 @@
 
 package main
 
+import "fmt"
+
 // ---------------------------------------------------------
 // EXERCISE: Declare empty arrays
 //
@@ -59,4 +61,45 @@ package main
 // ---------------------------------------------------------
 
 func main() {
+	// First Part
+	//1. The names of your three best friends (names array)
+	bestFriends := [3]string{"Kerem", "Baran", "Baris"}
+	fmt.Println(bestFriends)
+	fmt.Printf("%T \n", bestFriends)
+	//    2. The distances to five different locations (distances array)
+	distances := [5]int{30, 40, 50, 120, 130}
+	fmt.Println(distances)
+	fmt.Printf("%T \n", distances)
+	//    3. A data buffer with five bytes of capacity (data array)
+	data := [5]uint8{8, 16, 32, 64, 128}
+	fmt.Println(data)
+	fmt.Printf("%T \n", data)
+	//    4. Currency exchange ratios only for a single currency (ratios array)
+	ratios := [1]float64{17.28}
+	fmt.Println(ratios)
+	fmt.Printf("%T \n", ratios)
+	//    5. Up/Down status of four different web servers (alives array)
+	status := [4]bool{true, false, true, true}
+	fmt.Println(status)
+	fmt.Printf("%T \n", status)
+	//    6. A byte array that doesn't occupy memory space (zero array)
+	emptyArray := [0]byte{}
+	fmt.Println(emptyArray)
+	fmt.Printf("%T \n", emptyArray)
+
+	// Second Part
+	fmt.Printf("%T \n", bestFriends)
+	fmt.Printf("%T \n", distances)
+	fmt.Printf("%T \n", data)
+	fmt.Printf("%T \n", ratios)
+	fmt.Printf("%T \n", status)
+	fmt.Printf("%T \n", emptyArray)
+
+	// Third Part
+	fmt.Println(bestFriends)
+	fmt.Println(distances)
+	fmt.Println(data)
+	fmt.Println(ratios)
+	fmt.Println(status)
+	fmt.Println(emptyArray)
 }
